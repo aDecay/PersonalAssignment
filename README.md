@@ -35,6 +35,7 @@ void drawCube(BlockID block, int sx, int sy, int sz, int ex, int ey, int ez)
 }
 ```
 #### 메인 함수
+```C
 int main()
 {
 	int sx, sy, sz;
@@ -49,6 +50,7 @@ int main()
 	BlockID wallBlock = createBlock(BLOCK_POLISHED_GRANITE);
 	BlockID airBlock = createBlock(BLOCK_AIR);
 
+	//블록 생성 범위 입력
 	scanf("%d %d %d", &sx, &sy, &sz);
 	scanf("%d %d %d", &ex, &ey, &ez);
 
@@ -94,3 +96,4 @@ int main()
 		drawCube(airBlock, rx - walld, by, fz + z, rx, by + wallh / 2, fz + z + blankd);
 	}
 }
+```
